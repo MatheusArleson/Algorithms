@@ -6,7 +6,6 @@ public class BucketSort extends AbstractSorter {
 	
 	private int maxValue;
 	private int[] bucket;
-	private int[] sorted;
 	
 	public BucketSort() { }
 
@@ -25,7 +24,6 @@ public class BucketSort extends AbstractSorter {
 
         // Initialise bucket
         this.bucket = new int[maxValue + 1];
-        this.sorted = new int[arraySize];
 	}
 
 	@Override
@@ -36,20 +34,24 @@ public class BucketSort extends AbstractSorter {
 //			this.bucket[i] = 0;
 //		}
 
-		//
+		//trasverse the array
+		//each value is a bucket index 
+		//so, for each increment by one when a value is found
 		for (int i = 0; i < array.length; i++) {
 			this.bucket[array[i]]++;
 		}
 
 		int pos = 0;
-		// pull out from bucket and put it
+		// for each bucket
+		// get the count and add the number times the count
+		//
 		for (int i = 0; i < this.bucket.length; i++) {
 			for (int j = 0; j < this.bucket[i]; j++) {
-				this.sorted[pos++] = i;
+				array[pos++] = i;
 			}
 		}
 		
-		return this.sorted;
+		return array;
 	}
 	
 }
