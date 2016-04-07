@@ -1,5 +1,6 @@
-package br.com.xavier.algorithms.sort.impl;
+package br.com.xavier.algorithms.sort.abstractions;
 
+import br.com.xavier.algorithms.sort.impl.MergeSort;
 import br.com.xavier.algorithms.sort.interfaces.SorterTest;
 
 public abstract class MergeSortAbstractTest extends SorterTest {

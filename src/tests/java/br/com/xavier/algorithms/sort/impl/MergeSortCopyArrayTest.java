@@ -1,5 +1,7 @@
 package br.com.xavier.algorithms.sort.impl;
 
+import br.com.xavier.algorithms.sort.abstractions.MergeSortAbstractTest;
+
 public class MergeSortCopyArrayTest extends MergeSortAbstractTest{
 	
 	private static final int NUMBER_OF_ELEMENTS = 50;

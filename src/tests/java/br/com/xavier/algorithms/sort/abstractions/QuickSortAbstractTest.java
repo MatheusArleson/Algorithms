@@ -1,5 +1,6 @@
-package br.com.xavier.algorithms.sort.impl;
+package br.com.xavier.algorithms.sort.abstractions;
 
+import br.com.xavier.algorithms.sort.impl.QuickSort;
 import br.com.xavier.algorithms.sort.interfaces.SorterTest;
 
 public abstract class QuickSortAbstractTest extends SorterTest {
